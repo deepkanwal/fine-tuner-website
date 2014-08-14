@@ -38,8 +38,8 @@ a:hover {
 
 header {
   padding: 35px 0 30px 0;
-  font-size: 16px;
-  height: 280px;
+  font-size: 18px;
+  height: 290px;
   margin: 0 auto;
   background: black;
   color: white;
@@ -47,9 +47,9 @@ header {
 }
 @media (max-width: 500px) {
   header {
-    padding: 20px 0 10px 0;
+    padding: 30px 0 10px 0;
     font-size: 12px;
-    height: 210px;
+    height: 220px;
   }
 }
 header .logo {
@@ -75,11 +75,11 @@ header h1 {
 }
 header .appstore {
   padding: 10px 0 20px 0;
-  max-width: 175px;
+  width: 175px;
 }
 @media (max-width: 500px) {
   header .appstore {
-    max-width: 145px;
+    width: 145px;
   }
 }
 
@@ -144,6 +144,7 @@ header .appstore {
   line-height: 150%;
 }
 .ribbon .caption .appstore {
+  max-width: 145px;
   padding: 10px 0;
 }
 .ribbon .full {
@@ -162,8 +163,8 @@ hr {
   border: none;
   height: 1px;
   /* Set the hr color */
-  color: #aaaaaa;
-  background-color: #aaaaaa;
+  color: #cccccc;
+  background-color: #cccccc;
 }
 @media (max-width: 750px) {
   hr {
