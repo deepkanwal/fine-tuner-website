@@ -86,6 +86,15 @@ header {
 			vertical-align: 10px;
 		
 		}
+
+		a {
+		    font-weight: $font-weight-thin;
+			color:white;
+		}
+
+		a:hover {
+			color:white;
+		}
 	}
 
 	.appstore {
@@ -185,12 +194,22 @@ header {
 	padding: 10px 30px 0px 30px;
 }
 
+
+.privacy
+{
+	padding-top: 30px;
+
+	h2 {
+		text-align: center;
+		font-weight: $font-weight-normal;
+	}
+}
+
 hr {
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 500px;
 	
 	@media (max-width:$width-tablet) {
-		margin-top: 30px;
 		max-width: 60%;
 	}
 
@@ -199,6 +218,10 @@ hr {
     /* Set the hr color */
     color: #cccccc; //old IE
     background-color: #cccccc; //Modern Browsers
+}
+
+.extra-padding {
+	margin-top: 40px;
 }
 
 footer {

@@ -78,6 +78,13 @@ header h1 {
     vertical-align: 10px;
   }
 }
+header h1 a {
+  font-weight: 100;
+  color: white;
+}
+header h1 a:hover {
+  color: white;
+}
 header .appstore {
   padding: 10px 0 20px 0;
   width: 175px;
@@ -167,8 +174,16 @@ header .appstore {
   display: block;
 }
 
+.privacy {
+  padding-top: 30px;
+}
+.privacy h2 {
+  text-align: center;
+  font-weight: 300;
+}
+
 hr {
-  margin-top: 40px;
+  margin-top: 30px;
   width: 500px;
   border: none;
   height: 1px;
@@ -178,9 +193,12 @@ hr {
 }
 @media (max-width: 750px) {
   hr {
-    margin-top: 30px;
     max-width: 60%;
   }
+}
+
+.extra-padding {
+  margin-top: 40px;
 }
 
 footer {
