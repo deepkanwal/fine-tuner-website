@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */
+}
+
 body {
   margin: 0;
   font-size: 18px;
@@ -89,12 +94,17 @@ header .appstore {
   overflow: hidden;
   padding: 10px 30px 0px 30px;
 }
+@media (max-width: 750px) {
+  .ribbon {
+    text-align: center;
+  }
+}
 .ribbon h3 {
   font-size: 25px;
   display: inline-block;
   margin: 0;
 }
-@media (max-width: 750px) {
+@media (max-width: 500px) {
   .ribbon h3 {
     font-size: 20px;
   }
@@ -106,7 +116,7 @@ header .appstore {
 }
 @media (max-width: 750px) {
   .ribbon .image {
-    max-width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     float: none;
   }
