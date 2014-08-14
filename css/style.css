@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-weight: 100;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  padding: 35px 0 30px 0;
+  font-size: 16px;
+  height: 280px;
+  margin: 0 auto;
+  background: black;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header {
+    padding: 20px 0 10px 0;
+    font-size: 12px;
+    height: 210px;
+  }
+}
+header .logo {
+  margin-right: 15px;
+  max-width: 70px;
+}
+@media (max-width: 500px) {
+  header .logo {
+    max-width: 50px;
+  }
+}
+header h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 50px;
+  vertical-align: 15px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 40px;
+    vertical-align: 10px;
+  }
+}
+header .appstore {
+  padding: 10px 0 20px 0;
+  max-width: 175px;
+}
+@media (max-width: 500px) {
+  header .appstore {
+    max-width: 145px;
+  }
+}
+
+.ribbon {
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 30px 0px 30px;
+}
+.ribbon h3 {
+  font-size: 25px;
+  display: inline-block;
+  margin: 0;
+}
+@media (max-width: 750px) {
+  .ribbon h3 {
+    font-size: 20px;
+  }
+}
+.ribbon .image {
+  display: inline-block;
+  max-width: 50%;
+  float: left;
+}
+@media (max-width: 750px) {
+  .ribbon .image {
+    max-width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+.ribbon .image img {
+  max-width: 100%;
+}
+.ribbon .left {
+  padding-right: 40px;
+  text-align: right;
+}
+.ribbon .right {
+  padding-left: 40px;
+  text-align: left;
+}
+.ribbon .caption {
+  display: inline-block;
+  padding-top: 100px;
+  float: left;
+  max-width: 50%;
+}
+@media (max-width: 750px) {
+  .ribbon .caption {
+    padding-top: 30px;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    float: none;
+  }
+}
+.ribbon .caption p {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 150%;
+}
+.ribbon .caption .appstore {
+  padding: 10px 0;
+}
+.ribbon .full {
+  padding-top: 30px;
+  max-width: 100%;
+  float: none;
+  text-align: center;
+}
+.ribbon .full h3 {
+  display: block;
+}
+
+hr {
+  margin-top: 40px;
+  width: 500px;
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #aaaaaa;
+  background-color: #aaaaaa;
+}
+@media (max-width: 750px) {
+  hr {
+    margin-top: 30px;
+    max-width: 60%;
+  }
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
