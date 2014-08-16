@@ -203,6 +203,10 @@ header {
 		text-align: center;
 		font-weight: $font-weight-normal;
 	}
+
+	@media (max-width:$width-tablet) {
+		text-align: left;
+	}
 }
 
 hr {

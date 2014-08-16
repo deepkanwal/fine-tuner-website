@@ -181,6 +181,11 @@ header .appstore {
   text-align: center;
   font-weight: 300;
 }
+@media (max-width: 750px) {
+  .privacy {
+    text-align: left;
+  }
+}
 
 hr {
   margin-top: 30px;
