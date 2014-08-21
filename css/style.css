@@ -116,6 +116,12 @@ header .appstore {
     font-size: 20px;
   }
 }
+@media (max-width: 750px) {
+  .ribbon h3 {
+    text-align: center;
+    display: block;
+  }
+}
 .ribbon .image {
   display: inline-block;
   max-width: 50%;
@@ -151,14 +157,14 @@ header .appstore {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
-    text-align: center;
     float: none;
+    text-align: center;
   }
 }
-.ribbon .caption p {
-  display: inline-block;
-  max-width: 100%;
-  line-height: 150%;
+@media (max-width: 750px) {
+  .ribbon .caption p {
+    text-align: left;
+  }
 }
 .ribbon .caption .appstore {
   max-width: 145px;
@@ -169,6 +175,11 @@ header .appstore {
   max-width: 100%;
   float: none;
   text-align: center;
+}
+@media (max-width: 750px) {
+  .ribbon .full p {
+    text-align: left;
+  }
 }
 .ribbon .full h3 {
   display: block;

@@ -124,6 +124,11 @@ header {
 		@media (max-width:$width-mobile) {
 			font-size: 20px;
 		}
+
+		@media (max-width:$width-tablet) {
+			text-align: center;
+			display: block;
+		}
 	}
 
 	.image {
@@ -164,14 +169,14 @@ header {
 			max-width: 100%;
 			padding-left: 0; 
 			padding-right: 0;
-			text-align: center;
 			float: none;
+			text-align: center;
 		}
 
 		p {
-			display: inline-block;
-			max-width: 100%;
-			line-height: 150%;
+			@media (max-width:$width-tablet) {
+				text-align: left;
+			}
 		}
 
 		.appstore {
@@ -185,6 +190,12 @@ header {
 		max-width: 100%;
 		float: none;
 		text-align: center;
+
+		p {
+			@media (max-width:$width-tablet) {
+				text-align: left;
+			}
+		}
 
 		h3 {
 			display: block;
