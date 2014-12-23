@@ -96,15 +96,16 @@ header {
 			color:white;
 		}
 	}
-
-	.appstore {
-		padding: 10px 0 20px 0;
-		width: 175px;
-		@media (max-width:$width-mobile) {
-			width: 145px;
-		}
-	}	
 }
+
+
+.appstore {
+	padding: 10px 0 20px 0;
+	width: 175px;
+	@media (max-width:$width-mobile) {
+		width: 145px;
+	}
+}	
 
 .ribbon {
 
@@ -160,7 +161,7 @@ header {
 	.caption {
 		display: inline-block;
 
-		padding-top: 100px;
+		padding-top: 150px;
 		float: left;
 		max-width: 50%;
 
@@ -209,7 +210,8 @@ header {
 .privacy
 {
 	padding-top: 30px;
-
+	padding-bottom: 30px;
+	
 	h2 {
 		text-align: center;
 		font-weight: $font-weight-normal;
@@ -240,6 +242,6 @@ hr {
 }
 
 footer {
-	padding: 50px 0;
+	padding: 25px 0;
 	text-align: center;
 }
