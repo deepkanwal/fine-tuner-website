@@ -1,12 +1,16 @@
 $default-font:'Roboto', sans-serif;
-$font-weight-thin:100;
-$font-weight-normal:300; 
-$font-weight-bold:400; 
+$font-weight-normal:400; 
+$font-weight-bold:500; 
 
-$width-mobile: 500px;
-$width-tablet: 750px;
+$width-mobile: 400px;
 
 $max-width: 750px;
+
+$light-color: #EDEDED;
+$dark-color: #373334;
+
+$btn-radius: 10px;
+$btn-height: 50px;
 
 * {
     -webkit-box-sizing: border-box;
@@ -19,10 +23,11 @@ html {
 }
 
 body {
+	background: $light-color;
     margin: 0;
     font-size: 18px;
 	@media (max-width:$width-mobile) {
-		font-size: 14px;
+		font-size: 16px;
 	}
     font-family: $default-font;
     font-weight: $font-weight-normal;
@@ -34,8 +39,14 @@ h3,
 h4,
 h5,
 h6,
-label {
-    font-weight: $font-weight-thin;
+label,
+p {
+	color: $dark-color;
+}
+
+h1,
+h2 {
+	font-weight: $font-weight-bold;
 }
 
 a {
@@ -49,199 +60,95 @@ a:hover {
 }
 
 header {
-
-	padding: 35px 0 30px 0;
-	font-size: 18px;
-	height: 290px;
-	margin: 0 auto;
-
-	background:black;
-	color:white;
-	text-align:center;
-
-	@media (max-width:$width-mobile) {
-		padding: 30px 0 10px 0;
-		font-size: 12px;
-		height: 220px;
-	}
-
-	.logo {
-		margin-right: 15px;
-
-		max-width: 70px;
-		@media (max-width:$width-mobile) {
-			max-width: 50px;
-		}
-
-	}
-
-	h1 {
-		display: inline-block;
-		margin: 0;
-
-		font-size: 50px;
-		vertical-align: 15px;
-		@media (max-width:$width-mobile) {
-			font-size: 40px;
-			vertical-align: 10px;
-		
-		}
-
-		a {
-		    font-weight: $font-weight-thin;
-			color:white;
-		}
-
-		a:hover {
-			color:white;
-		}
-	}
-}
-
-
-.appstore {
-	padding: 10px 0 20px 0;
-	width: 175px;
-	@media (max-width:$width-mobile) {
-		width: 145px;
-	}
+	margin-top: 25px;
 }	
 
-.ribbon {
-
-	max-width:$max-width;
-	margin: 0 auto;
-	overflow: hidden;
-
-	@media (max-width:$width-tablet) {
-		text-align: center;
-	}
-
-	h3 {
-		font-size: 25px;
-		display: inline-block;
-		margin: 0;
-
-		@media (max-width:$width-mobile) {
-			font-size: 20px;
-		}
-
-		@media (max-width:$width-tablet) {
-			text-align: center;
-			display: block;
-		}
-	}
-
-	.image {
-		display: inline-block;
-		max-width: 50%;
-		float: left;
-
-		@media (max-width:$width-tablet) {
-			max-width: 400px;
-			margin: 0 auto;
-			float: none;
-		}
-
-		img {
-			max-width: 100%;
-		}
-	}
-
-	.left {
-		padding-right: 40px;
-		text-align: right;
-	}
-
-	.right {
-		padding-left: 40px;
-		text-align: left;
-	}
-
-	.caption {
-		display: inline-block;
-
-		padding-top: 150px;
-		float: left;
-		max-width: 50%;
-
-		@media (max-width:$width-tablet) {
-			padding-top: 30px;
-			max-width: 100%;
-			padding-left: 0; 
-			padding-right: 0;
-			float: none;
-			text-align: center;
-		}
-
-		p {
-			@media (max-width:$width-tablet) {
-				text-align: left;
-			}
-		}
-
-		.appstore {
-			max-width: 145px;
-			padding: 10px 0;
-		}
-	}
-
-	.full {
-		padding-top: 30px;
-		max-width: 100%;
-		float: none;
-		text-align: center;
-
-		p {
-			@media (max-width:$width-tablet) {
-				text-align: left;
-			}
-		}
-
-		h3 {
-			display: block;
-		}
-	}
-
-	padding: 10px 30px 0px 30px;
-}
-
-
-.privacy
-{
+footer {
+	clear: both;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	
-	h2 {
+
+	.links {
+		padding-bottom: 10px;
+	}
+}
+
+h1 {
+	display: inline-block;
+	float: left;
+
+	@media (max-width:$width-mobile) {
+		display: block;
+		float: none;
+	}
+}
+
+h1, h2 {
+	margin-top: 0;
+}
+
+.btn {
+	display: inline-block;
+	float: right;
+	width:150px;
+	height:$btn-height;
+	-webkit-border-radius: $btn-radius;
+	-moz-border-radius: $btn-radius;
+	border-radius: $btn-radius;
+	background-color:$dark-color;
+	font-weight: $font-weight-bold;
+	margin-top: 0px;
+
+	h3 {
+		margin: 0;
 		text-align: center;
-		font-weight: $font-weight-normal;
+		vertical-align: middle;
+		line-height: $btn-height;  
+		color: $light-color;
 	}
 
-	@media (max-width:$width-tablet) {
-		text-align: left;
+	@media (max-width:$width-mobile) {
+		clear: both;
+		float: none;
 	}
 }
 
-hr {
-	margin-top: 30px;
-	width: 500px;
-	
-	@media (max-width:$width-tablet) {
-		max-width: 60%;
+.btn:hover {
+	background-color:#726A6C;
+}
+
+.container {
+	margin: 0 auto; 
+	max-width: 600px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.screenshots {
+	h3 {
+		margin-top: 0px;
 	}
-
-	border: none;
-    height: 1px;
-    /* Set the hr color */
-    color: #cccccc; //old IE
-    background-color: #cccccc; //Modern Browsers
 }
 
-.extra-padding {
-	margin-top: 40px;
+.screenshot {
+	img {
+		height: 420px;
+		width: 200px;
+	}
+	padding-right: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	float: left;
+
+	@media (max-width:510px) {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
-footer {
-	padding: 25px 0;
-	text-align: center;
+.section {
+	clear: both;
+	padding-top: 25px;
 }
